@@ -52,3 +52,47 @@ double studentsPerGroupCorrect = (double)totalStudents / groupsCount;
 
 Console.WriteLine($"25 / 4 как int: {studentsPerGroupWrong}");
 Console.WriteLine($"25 / 4 как double: {studentsPerGroupCorrect}");
+
+
+Console.WriteLine();
+Console.WriteLine("Способы собрать строку");
+
+string firstName = "Анна";
+string lastName = "Смирнова";
+
+// Складываем строки с помощью знака +
+string fullNamePlus = firstName + " " + lastName;
+
+// Вставляем переменные прямо в текст
+string fullNameInterpolated = $"{firstName} {lastName}";
+
+// Собираем строку специальным методом
+string fullNameConcat = string.Concat(firstName, " ", lastName);
+
+Console.WriteLine(fullNamePlus);
+Console.WriteLine(fullNameInterpolated);
+Console.WriteLine(fullNameConcat);
+
+Console.WriteLine(
+    $"Все три строки равны: {fullNamePlus == fullNameInterpolated && fullNameInterpolated == fullNameConcat}");
+
+Console.WriteLine();
+Console.WriteLine("Константы");
+
+const double VatRate = 0.20;
+const string CollegeName = "ВФ ВолГУ";
+
+double productPrice = 1000;
+double priceWithVat = productPrice * (1 + VatRate);
+
+Console.WriteLine($"Учебное заведение:  {CollegeName}");
+
+Console.WriteLine($"Цена без ДНС  {productPrice}, с ДНС ({VatRate:P0}):{priceWithVat}");
+
+// я считал площадь и периметр комнаты
+
+// я сравнивал способы объединения строк
+
+// рассчитывал цену товара с ДНС
+  
+  
